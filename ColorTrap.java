@@ -108,7 +108,6 @@ public class ColorTrap extends Application
     //adds score if the user's choice meets the winning condition
      public void checkChoice(Text choice)
     {
-        //TODO complete this method as required.
         if(trapWord.getFill() == (Color.valueOf(choice.getText()))){
                 score++;
                 txtScore.setText("Score: " + score);
@@ -116,8 +115,6 @@ public class ColorTrap extends Application
         
         hboxTop.getChildren().removeAll(trapWord);
         flowPane.getChildren().removeAll(optionArray[0],optionArray[1],optionArray[2],optionArray[3],optionArray[4],optionArray[5],optionArray[6]);
-        //Do NOT add any code after this comment
-        //Choose a new trap word and options list
         chooseTrapWordAndColor();
         colorNameOptions();
     }
